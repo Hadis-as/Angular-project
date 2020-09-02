@@ -7,6 +7,7 @@
             <div class="row">
                 <div class="col">
                     <mat-form-field class="half-width">
+
                         <input matInput placeholder="نام و نام خانوادگی" formControlName="firstName">
                         <mat-error *ngIf="addressForm.controls['firstName'].hasError('required')">
                             <strong>required</strong>
@@ -25,18 +26,15 @@
             <div class="row">
                 <div class="col">
                     <mat-form-field class="half-width">
-                        <input matInput placeholder="پست الکترونیک" formControlName="title" type="email">
-                        <mat-error *ngIf="addressForm.controls['title'].hasError('required')">
+                        <input matInput placeholder="پست الکترونیک" formControlName="email" type="email">
+                        <mat-error *ngIf="addressForm.controls['email'].hasError('required')">
                             <strong>required</strong>
                         </mat-error>
                     </mat-form-field>
                 </div>
                 <div class="col">
                     <mat-form-field class="half-width">
-                        <input matInput placeholder="عنوان" formControlName="title">
-                        <mat-error *ngIf="addressForm.controls['title'].hasError('required')">
-                            <strong>required</strong>
-                        </mat-error>
+                        <input matInput placeholder="عنوان">
                     </mat-form-field>
                 </div>
             </div>
